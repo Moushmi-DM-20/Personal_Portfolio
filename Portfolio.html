@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/Portfolio.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+      PORTFOLIO
+    </title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <style>
+      body{
+        margin: 0px;
+        background-color:rgb(246, 232, 210);
+        
+        height: 600px;
+      }
+      .Header{
+        background-color:rgb(207, 243, 243);
+        margin: 0px;
+        padding-left:10px;
+        padding-right:10px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 80px;
+      }
+      .left_header{
+        margin: 0px;
+        margin-right: 20px;
+        text-align: center;
+        min-width: 355px;
+        
+      }
+      .right_header{
+        margin: 0px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        
+      }
+      .Profile{
+        display: flex;
+        padding-top: 70px;
+      }
+      .Image{
+        display:inline-block;
+      }
+      .Profile_picture{
+        
+        margin: 0%;
+        display:inline-block;
+        border:solid;
+        border-width: 5px;
+        border-color: rgb(207, 243, 243);
+      }
+      .Personal_detail{
+        display:inline;
+        vertical-align: baseline;
+        margin: 0%;
+      }
+      .Name{
+        font-size: 45px;
+        font-weight: bold;
+        margin: 0px;
+        text-align: center;
+        margin: 20px;
+        margin-top: 35px;
+        box-shadow: 5px 5px 10px gray ;
+        border-radius: 30px;
+        cursor: pointer;
+        background-color:rgb(189, 241, 241) ;
+      }
+      .Title{
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 0px;
+        margin: 20px;
+        text-align: center;
+        font-style: italic;
+        color: grey;
+      }
+      .Objective{
+        font-size: medium;
+        line-height: 25px;
+        text-indent: 35px;
+        text-align: justify;
+        margin:40px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        word-wrap: normal;
+      }
+      .top_name{
+        flex:3;
+        font-size: 30px;
+      }
+      .top_home,
+      .top_about,
+      .top_softskills,
+      .top_technicalskills,
+      .top_contact{
+        flex:1;
+        cursor: pointer;
+        text-align: center;
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .top_home:hover,
+      .top_about:hover,
+      .top_softskills:hover,
+      .top_technicalskills:hover,
+      .top_contact:hover{
+        transition-duration: 0.15s;
+        background-color: rgb(129, 188, 188);
+        border-radius: 15px;
+      }
+      .Contact_info{
+        align-items: center;
+        background-color:rgb(207, 243, 243);
+        border-radius: 5px;
+        margin-top: -5px;
+      }
+      .Buttons{
+        display:grid;
+        column-gap: 30px;
+        row-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 50px;
+        align-items: center;
+      }
+      button{
+        padding: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin: 40px;
+        background-color: rgb(207, 243, 243);
+        border: none;
+        border-radius: 50px;
+        line-height: 20px;
+        cursor: pointer;
+        box-shadow: 10px 10px 20px gray;
+      }
+      button:hover{
+        background-color: aqua;
+        transition-duration: 0.15s;
+      }
+      a{
+        color: black;
+        text-decoration: none;
+      }
+      @media screen and (max-width:750px){
+        .Image{
+          display: block;
+          max-width: 750px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .Personal_detail{
+          max-width: 750px;
+        }
+        .Profile{
+          display: flex;
+          flex-direction: column;
+          max-width: 750px;
+        }
+        .Profile_picture{
+          max-width: 750px;
+        }
+        .Buttons{
+        max-width: 750px;
+        display:flex;
+        flex-direction: column;
+        }
+        .Name{
+          font-weight:bold;
+          font-size: 45px;
+          background-color: rgb(189, 241, 241);
+        }
+        .Header{
+          max-width: 750px;
+          width: 100%;
+        
+        }
+        .left_header{
+          min-width: 10%;
+        }
+        .right_header{
+          min-width: 80%;
+          font-size: xx-small;
+        }
+        .top_name{
+          font-size: xx-small;
+        }
+      }
+      @media screen and (max-width:600px){
+        .Image{
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .Personal_detail{
+          max-width: 600px;
+        }
+        .Profile{
+          display: flex;
+          flex-direction: column;
+          max-width: 600px;
+        }
+        .Profile_picture{
+          max-width: 600px;
+          display: block;
+        }
+        .Buttons{
+        max-width: 600px;
+        display:flex;
+        flex-direction: column;
+        }
+        .Name{
+          font-weight:bold;
+          font-size: 25px;
+          background-color:rgb(189, 241, 241) ;
+        }
+        .Header{
+          max-width: 600px;
+          width: 100%;
+        }
+        .left_header{
+          min-width: 10%;
+          flex-shrink:7;
+          flex-basis: 100px;
+        }
+        .right_header{
+          min-width: 80%;
+          font-size: xx-small;
+          padding-right:5px;
+        }
+        .top_name{
+          font-size:xx-small ;
+        }
+      }
+      @media screen and (max-width:450px){
+        .Image{
+          max-width: 450px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .Personal_detail{
+          max-width: 450px;
+        }
+        .Profile{
+          display: flex;
+          flex-direction: column;
+          max-width: 450px;
+        }
+        .Profile_picture{
+          max-width: 450px;
+          display: block;
+        }
+        .Buttons{
+        max-width: 450px;
+        display:flex;
+        flex-direction: column;
+        }
+        .Name{
+          font-weight:bold;
+          font-size: 25px;
+          background-color:rgb(189, 241, 241) ;
+        }
+        .Header{
+          max-width: 450px;
+          width: 100%;
+        }
+        .left_header{
+          min-width: 10%;
+          flex-shrink:7;
+          flex-basis: 100px;
+        }
+        .right_header{
+          min-width: 80%;
+          font-size: xx-small;
+          padding-right:5px;
+        }
+        .top_name{
+          font-size:xx-small ;
+        }
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="Header">
+      <div class="left_header">
+      <p class="top_name">
+        Hi, I'm Moushmi
+      </p>
+      </div>
+      
+      <div class="right_header">
+      <a href="Portfolio.html">
+      <p class="top_home">
+        HOME
+      </p>
+      </a>
+      <a href="About.html" target="_blank">
+      <p class="top_about">
+        ABOUT
+      </p>
+      </a>
+      <a href="softskills.html" target="_blank">
+      <p class="top_softskills">
+        SOFT SKILLS
+      </p>
+      </a>
+      <a href="technicalskills.html" target="_blank">
+      <p class="top_technicalskills">
+        TECHNICAL SKILLS
+      </p>
+      </a>
+      <a href="contact.html" target="_blank">
+      <p class="top_contact">
+        CONTACT
+      </p>
+      </a>
+      </div>
+    </div>
+    <div class="Profile">
+    <div class="Image">
+      <img class="Profile_picture" src="Profilepicture.png">
+    </div>
+    <div class="Personal_detail">
+      <p class="Name">
+        MOUSHMI D M
+      </p>
+      <p class="Title">
+        Junior Front-End Developer
+      </p>
+      <p class="Objective">
+        As a newcomer to the tech industry, my goal is to combine my artistic flair and technical acumen to craft immersive and visually stunning web experiences.
+         With a solid grounding in HTML, CSS and rudimentary skills in SQL, Python, and JavaScript, I aspire to secure a role that allows me to collaborate with creative minds and push the boundaries of web design. My objective is to grow into a well-rounded Front-End Developer, adept at translating ideas into engaging digital interfaces that captivate and inspire users. In addition to honing my technical skills, and I am committed to continuous learning and growth. Ultimately, my goal is to build a diverse portfolio showcasing my ability to create impactful web solutions that not only meet but exceed client expectations. Through dedication and passion for web development, I am eager to make a meaningful impact in the industry.
+      </p>
+      <div class="Buttons">
+          <a href="softskills.html" target="_blank">
+            <button>
+              SOFT SKILLS
+            </button>
+          </a>
+          <a href="technicalskills.html" target="_blank">
+            <button>
+              TECHNICAL SKILLS
+            </button>
+          </a>
+          <a href="resume.html" target="_blank">
+            <button>
+              RESUME
+            </button>
+          </a>
+        <a href="contact.html" target="_blank">
+        <button>
+          CONTACT
+        </button>
+        </a>
+      </div>
+    </div>
+    </div>
+</body>
+</html>

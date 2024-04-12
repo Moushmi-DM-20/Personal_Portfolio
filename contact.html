@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      CONTACT
+    </title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <style>
+      body{
+        background-color: black;
+        margin: 0%;
+      }
+      .header{
+        margin: 0%;
+        align-items:center;
+        display: flex;
+        justify-content: space-between;
+        background-color:black;
+        padding: 0px;
+        width: 100%;
+        position: fixed;
+        background-color: rgb(194, 190, 190);
+        height: 10%;
+      }
+      .top_home,
+      .top_about,
+      .top_softskills,
+      .top_technicalskills,
+      .top_contact{
+        flex:1;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .top_home:hover,
+      .top_about:hover,
+      .top_softskills:hover,
+      .top_technicalskills:hover,
+      .top_contact:hover{
+        transition-duration: 0.15s;
+        background-color:rgb(158, 155, 155);
+        border-radius: 15px;
+      }
+      a{
+        color: black;
+        text-decoration: none;
+      }
+      .parallax{
+        background-image: url("contact_image.jpg");
+        min-height: 1000px;
+        background-attachment: fixed;
+        background-position: center;
+      
+      
+      }
+      .title{
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        color: rgb(248, 243, 243);
+      }
+      .call_logo_image,
+      .email_logo_image,
+      .location_logo_image{
+        width:5%;
+        border-radius: 25%;
+      }
+      .contact_info{
+        text-align: center;
+        display: block; 
+        color: rgb(230, 225, 225); 
+      }
+      .contact_detail_container{
+        align-items: center;
+        
+      }
+      @media screen and (max-width:750px){
+        .parallax{
+          height:4000px;
+        }
+        .header{
+          height: 6%;
+          font-size: xx-small;
+        }
+      }
+      @media screen and (max-width:600px){
+        .parallax{
+          height:3000px;
+        }
+        .header{
+          height: 6%;
+          font-size: xx-small;
+        }
+      }
+      @media screen and (max-width:450px){
+        .parallax{
+          height:3000px;
+        }
+        .header{
+          height: 6%;
+          font-size: xx-small;
+        }
+      }
+    </style>
+  <body>
+    <div class="header">
+      <a href="Portfolio.html" target="_blank">
+      <p class="top_home">
+        HOME
+      </p>
+      </a>
+      <a href="About.html" target="_blank">
+      <p class="top_about">
+        ABOUT
+      </p>
+      </a>
+      <a href="softskills.html">
+      <p class="top_softskills">
+        SOFT SKILLS
+      </p>
+    </a>
+    <a href="technicalskills.html" target="_blank">
+    <p class="top_technicalskills">
+      TECHNICAL SKILLS
+    </p>
+    </a>
+    <a href="contact.html">
+    <p class="top_contact">
+      CONTACT
+    </p>
+    </a>
+    </div>
+    <div class="parallax">
+    </div>
+    <div>
+      <p class="title">
+      FOR CONTACT
+      </p>
+      <div class="contact_detail_container">
+        <div class="contact_info">
+          <img class="call_logo_image" src="call_logo.avif">
+        <p>
+          7598836658
+        </p>
+        </div>
+        <div class="contact_info">
+          <img class="email_logo_image" src="email_logo.jpg" >
+        <p>
+          moushmidm@gmail.com
+        </p>
+        </div>
+        <div class="contact_info">
+          <img class="location_logo_image" src="location_logo.png">
+        <p>
+          Melai Thetti, Meenachel Post, Kanyakumari District, TamilNadu
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>        
+</html>
